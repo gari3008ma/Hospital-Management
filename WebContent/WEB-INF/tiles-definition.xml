@@ -1,0 +1,67 @@
+<component-definitions>
+
+<definition name="hospitalmanagement.common" path="/hospitalmanagementLayout/layout.jsp">
+ <put name="title" type="string" value="hospitalmanagement Hospital"/>
+ <put name="header1" value="/hospitalmanagementLayout/header.jsp"/>
+ <put name="footer1" value="/hospitalmanagementLayout/footer.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.login" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/login.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.admin" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementAdminJspFiles/adminlogin.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.employee" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/employees.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.frontofficemanager" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/frontoffice.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.doctordetails" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/doctordetails.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.healthawareness" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/healthawareness.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.systemreport" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/systemreport.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.appointmentreports" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/appointmentreports.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.appointmentscheduling" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/appointmentscheduling.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.appointmentrescheduling" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/appointmentrescheduling.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.adminmainpage" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementAdminJspFiles/adminmainpage.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.newuseradmin" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/newuseradmin.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.addnewequipment" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/addnewequipment.jsp"/>
+</definition>
+
+<definition name="hospitalmanagement.patientdetails" extends="hospitalmanagement.common">
+ <put name="body1" value="/hospitalmanagementJspFiles/patientdetails.jsp"/>
+</definition>
+
+
+
+</component-definitions>

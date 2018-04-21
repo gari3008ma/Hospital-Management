@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="hospitalManagementForm" type="garima.hospital.management.struts.form.HospitalManagementForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    <forward name="login1" path="/hospitalManagementAction.do?do=login" />
+    <forward name="admin" path="/hospitalManagementAction.do?do=admin1" />
+    
+
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="hospitalManagementForm"
+      input="/index.jsp"
+      name="hospitalManagementForm"
+      parameter="do"
+      path="/hospitalManagementAction"
+      scope="request"
+      type="garima.hospital.management.struts.action.HospitalManagementAction">
+      <forward name="adminmainpage" path="hospitalmanagement.adminmainpage" />
+      <forward name="login" path="hospitalmanagement.login" />
+      <forward name="systemreport" path="hospitalmanagement.systemreport" />
+      <forward name="frontofficemanager" path="hospitalmanagement.frontofficemanager" />
+      <forward name="appointmentscheduling" path="hospitalmanagement.appointmentscheduling" />
+      <forward name="appointmentrescheduling" path="hospitalmanagement.appointmentrescheduling" />
+      <forward name="appointmentreports" path="hospitalmanagement.appointmentreports" />
+      <forward name="adminlogin" path="hospitalmanagement.admin" />
+      <forward name="employee" path="hospitalmanagement.employee" />
+      <forward name="patientdetails" path="hospitalmanagement.patientdetails" />
+      <forward name="newuseradmin" path="hospitalmanagement.newuseradmin" />
+      <forward name="healthawareness" path="hospitalmanagement.healthawareness" />
+      <forward name="doctordetails" path="hospitalmanagement.doctordetails" />
+      <forward name="addnewequipment" path="hospitalmanagement.addnewequipment" />
+    </action>
+
+  </action-mappings>
+
+  <message-resources parameter="com.feelsafe.struts.ApplicationResources" />
+  <plug-in className="org.apache.struts.tiles.TilesPlugin">
+    <set-property property="definitions-parser-validate" value="true" />
+    <set-property property="moduleAware" value="true" />
+    <set-property property="definitions-config" value="/WEB-INF/tiles-definition.xml" />
+  </plug-in>
+</struts-config>
+
